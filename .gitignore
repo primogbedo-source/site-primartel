@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+._*
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Cloudflare / outils locaux
+.wrangler/
+node_modules/

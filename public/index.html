@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✏️ Titre et description affichés sur Google -->
+  <title>PRIMART'EL — Réalisateur, cadreur & monteur | Bénin · Côte d'Ivoire | Clips & vidéos événementielles</title>
+  <meta name="description" content="PRIMART'EL, réalisateur, cadreur et monteur au Bénin et en Côte d'Ivoire : clips musicaux, mariages, concerts, soirées et captations live.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- ================= INTRO (écran d'accueil) ================= -->
+  <div id="intro" class="intro">
+    <div class="intro-bg media" style="--img:url(images/portrait.jpg)"></div>
+    <div class="intro-inner">
+      <img src="images/logo.png" alt="PRIMART'EL" class="intro-logo">
+      <button class="btn-outline" id="discover">Découvrir</button>
+    </div>
+  </div>
+
+  <!-- ================= MENU ================= -->
+  <header class="nav" id="nav">
+    <a href="#accueil" class="logo"><img src="images/logo.png" alt="PRIMART'EL"></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    <nav class="links" id="links">
+      <a href="#accueil">Accueil</a>
+      <a href="#bio">Bio</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO / SLIDER ================= -->
+  <section id="accueil" class="hero">
+    <!-- ✏️ Mets tes images dans le dossier images/ avec ces noms (ou change-les) -->
+    <div class="slide active media" style="--img:url(images/slide1.jpg)"></div>
+    <div class="slide media alt1" style="--img:url(images/slide2.jpg)"></div>
+    <div class="slide media alt2 top" style="--img:url(images/portrait.jpg)"></div>
+    <div class="slide media" style="--img:url(images/tournage.jpg); background-position: center 0%"></div>
+
+    <div class="hero-text">
+      <p class="kicker">Réalisateur · Cadreur · Monteur</p>
+      <h1>Chaque son<br>mérite son film.</h1>
+    </div>
+
+    <a href="#bio" class="chevrons" aria-label="Défiler"><i></i><i></i><i></i></a>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- ================= BIO ================= -->
+  <section id="bio" class="section bio">
+    <div class="bio-photo media top" style="--img:url(images/portrait2.jpg)"></div>
+    <div class="bio-text reveal">
+      <p class="label">Biographie</p>
+      <h2>PRIMART'EL</h2>
+      <p><strong>PRIMART'EL</strong> est un réalisateur, <strong>cadreur</strong> et <strong>monteur</strong> passionné, spécialisé dans les <strong>clips vidéo</strong> et la <strong>vidéo événementielle</strong>.</p>
+      <p>Il fait ses débuts en 2022 comme <strong>assistant</strong> aux côtés du réalisateur <strong>Barakell Beni</strong> et du <strong>label Phoenix</strong>, une école de terrain qui forge son regard et sa rigueur sur les plateaux. Il signe depuis le <strong>montage</strong> de plusieurs clips réalisés par Barakell Beni, et officie comme <strong>cadreur</strong> sur des clips d'<strong>artistes internationaux</strong>.</p>
+      <p>De l'idée au montage final, il accompagne les artistes pour donner une identité visuelle forte à leurs sons : écriture, tournage, montage et étalonnage.</p>
+      <p>Il immortalise aussi vos plus beaux moments (mariages, concerts, soirées, conférences) avec un regard cinématographique et une émotion qui dure.</p>
+      <div class="btns">
+        <a href="#services" class="btn-outline">Mes services</a>
+        <a href="#contact" class="btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHIFFRES ================= -->
+  <section class="stats">
+    <div><b data-count="4">0</b><span>Années d'expérience</span></div>
+    <div><b data-count="1000">0</b><span>Montages réalisés</span></div>
+    <div><b data-count="8" data-suffix=" M">0</b><span>Vues sur YouTube</span></div>
+    <div><b data-count="2" class="noplus">0</b><span>Pays · Bénin & Côte d'Ivoire</span></div>
+  </section>
+
+  <!-- ================= COLLABORATIONS ================= -->
+  <!-- ✏️ Ajoute ou retire des noms ici (la liste est dupliquée pour le défilement continu) -->
+  <section class="collabs">
+    <p class="label">Ils m'ont fait confiance</p>
+    <div class="marquee"><div class="track"><span>Axel Merryl</span><span>Toofan</span><span>First King</span><span>Formule 1</span><span>Barakell Beni</span><span>Label Phoenix</span><span>TGANG Le Technicien</span><span>Conex et Don</span><span>Mr Yann</span><span>CRYX</span><span>Frydaos</span><span>Axel Merryl</span><span>Toofan</span><span>First King</span><span>Formule 1</span><span>Barakell Beni</span><span>Label Phoenix</span><span>TGANG Le Technicien</span><span>Conex et Don</span><span>Mr Yann</span><span>CRYX</span><span>Frydaos</span></div></div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <div class="head reveal">
+      <h2>Services</h2>
+      <p>Ce que je peux faire pour toi</p>
+    </div>
+    <div class="services">
+      <!-- ✏️ Modifie / ajoute / supprime des services ici -->
+      <article class="service reveal">
+        <span class="num">01</span>
+        <h3>Clips vidéo</h3>
+        <p>Réalisation complète de clips musicaux : concept, écriture, tournage et direction artistique.</p>
+        <p class="price">Sur devis</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">02</span>
+        <h3>Vidéo événementielle</h3>
+        <p>Mariages, anniversaires, soirées, concerts : on filme vos moments comme un film.</p>
+        <p class="price">Sur devis</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">03</span>
+        <h3>Cadreur</h3>
+        <p>Opérateur caméra pour vos tournages : clips, films, pubs, émissions, concerts et festivals, à l'épaule ou au stabilisateur.</p>
+        <p class="price">Sur devis</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">04</span>
+        <h3>Montage & étalonnage</h3>
+        <p>Montage, color grading et effets pour donner un rendu cinéma à vos images.</p>
+        <p class="price">Sur devis</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">05</span>
+        <h3>Teasers & aftermovies</h3>
+        <p>Vidéos courtes et percutantes pour annoncer ou revivre un événement.</p>
+        <p class="price">Sur devis</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">06</span>
+        <h3>Contenus réseaux sociaux</h3>
+        <p>Reels, TikTok et formats verticaux pour faire vivre vos sorties.</p>
+        <p class="price">Sur devis</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="section">
+    <div class="head reveal">
+      <h2>Portfolio</h2>
+      <p>Une sélection de mes réalisations</p>
+    </div>
+
+    <!-- Filtres : à réactiver quand il y aura des vidéos événementielles
+    <div class="filters" id="filters">
+      <button class="active" data-filter="all">Tout</button>
+      <button data-filter="video">Clips vidéo</button>
+      <button data-filter="event">Événementiel</button>
+    </div> -->
+
+    <div class="grid" id="grid">
+      <!-- ✏️ Pour ajouter une vidéo : copie un bloc <a>, change data-youtube (l'ID après youtu.be/),
+           l'image (images/yt-ID.jpg = miniature YouTube) et le titre.
+           data-cat = video (clip) ou event (événementiel). "featured" = grande case en haut. -->
+      <a class="item media featured" data-cat="video" data-youtube="ht2SPFqXZ_o" style="--img:url(images/yt-ht2SPFqXZ_o.jpg)">
+        <div class="cap"><span>Cadrage · <em>4,2 M de vues</em></span><h4>AXEL MERRYL FT. TOOFAN — GBA GBA</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="DhwRN0xZwOI" style="--img:url(images/yt-DhwRN0xZwOI.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>1,7 M de vues</em></span><h4>TGANG LE TECHNICIEN — LETON</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="jIKZsZIXhs0" style="--img:url(images/yt-jIKZsZIXhs0.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>1,6 M de vues</em></span><h4>CONEX ET DON — AYATO</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="NxspccKeyEg" style="--img:url(images/yt-NxspccKeyEg.jpg)">
+        <div class="cap"><span>Visualizer · <em>308 k vues</em></span><h4>CONEX ET DON — DI TOLOLO</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="gN5u891HHXE" style="--img:url(images/yt-gN5u891HHXE.jpg)">
+        <div class="cap"><span>Cadrage · <em>102 k vues</em></span><h4>FIRST KING — CHÉRIE AGONKÈ</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="hvDP53H3CfU" style="--img:url(images/yt-hvDP53H3CfU.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>41 k vues</em></span><h4>FORMULE 1 — TCHOKOTO</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="J2Aa3vbHnVw" style="--img:url(images/yt-J2Aa3vbHnVw.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>8 k vues</em></span><h4>MR YANN — C'EST LUI</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="2vuI_6AAjf8" style="--img:url(images/yt-2vuI_6AAjf8.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>7 k vues</em></span><h4>CRYX — GANSTARITY</h4></div>
+      </a>
+      <a class="item media" data-cat="video" data-youtube="UDiR9shIrug" style="--img:url(images/yt-UDiR9shIrug.jpg)">
+        <div class="cap"><span>Clip vidéo · <em>3 k vues</em></span><h4>FRYDAOS — HOMMAGE</h4></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact">
+    <div class="head reveal">
+      <h2>Contactez-moi</h2>
+      <p>Un projet ? Parlons-en.</p>
+    </div>
+    <!-- ✏️ Mets tes vrais contacts -->
+    <div class="contact-grid reveal">
+      <a href="mailto:primogbedo@gmail.com"><span>Email</span>primogbedo@gmail.com</a>
+      <a href="tel:+2290190141784"><span>Tél · WhatsApp</span>+229 01 90 14 17 84</a>
+      <a href="https://www.facebook.com/profile.php?id=61560255821191" target="_blank" rel="noopener"><span>Facebook</span>PRIMART'EL</a>
+      <a href="https://www.instagram.com/primartel90/" target="_blank" rel="noopener"><span>Instagram</span>@primartel90</a>
+      <a href="https://www.tiktok.com/@primartelclipper" target="_blank" rel="noopener"><span>TikTok</span>@primartelclipper</a>
+    </div>
+
+    <form class="form reveal" id="form">
+      <input name="nom" placeholder="Ton nom" required>
+      <input name="email" type="email" placeholder="Ton email" required>
+      <select name="service">
+        <option>Clip vidéo</option><option>Vidéo événementielle</option><option>Cadreur (opérateur caméra)</option><option>Concert / live</option>
+        <option>Montage / étalonnage</option><option>Teaser / aftermovie</option><option>Autre</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Ton projet : clip, mariage, concert… date, lieu, budget" required></textarea>
+      <button class="btn-outline" type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="footer">PRIMART'EL © <span id="year"></span> · BÉNIN · CÔTE D'IVOIRE</footer>
+
+  <!-- Bouton WhatsApp ✏️ remplace le numéro (format international sans + ni espaces) -->
+  <a class="whatsapp" href="https://wa.me/2290190141784?text=Bonjour%20PRIMART%27EL%2C%20j%27ai%20vu%20ton%20site%20et%20j%27ai%20un%20projet%20%C3%A0%20te%20proposer.%20" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.8 2 6.8L3.2 29l6.8-2c1.9 1.1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-2 0-3.9-.6-5.6-1.6l-.4-.2-4 1.2 1.2-3.9-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.2 9.8 10 5.1 16 5.1s10.8 4.7 10.8 10.5S22 26.1 16 26.1zm5.9-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox"><button aria-label="Fermer">×</button><div class="lb-content"></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
