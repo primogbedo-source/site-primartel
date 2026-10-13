@@ -9,3 +9,6 @@
 # Cloudflare / outils locaux
 .wrangler/
 node_modules/
+
+# Claude Code (local)
+.claude/
