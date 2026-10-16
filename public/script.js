@@ -93,7 +93,22 @@ document.querySelectorAll('#grid .item').forEach(it => it.addEventListener('clic
     : `<div class="media" style="${it.getAttribute('style')}"></div>`;
   lb.classList.add('open');
 }));
-const closeLb = () => { lb.classList.remove('open'); lbContent.innerHTML = ''; };
+// Galerie Coulisses : clic = photo en grand, flèches ← → pour naviguer
+const shots = [...document.querySelectorAll('#gallery .shot')];
+let shotIndex = -1;
+const showShot = i => {
+  shotIndex = (i + shots.length) % shots.length;
+  const s = shots[shotIndex];
+  lbContent.innerHTML = `<img src="${s.getAttribute('href')}" alt="${s.querySelector('img').alt}">`;
+  lb.classList.add('open');
+};
+shots.forEach((s, i) => s.addEventListener('click', e => { e.preventDefault(); showShot(i); }));
+addEventListener('keydown', e => {
+  if (!lb.classList.contains('open') || shotIndex < 0) return;
+  if (e.key === 'ArrowRight') showShot(shotIndex + 1);
+  if (e.key === 'ArrowLeft') showShot(shotIndex - 1);
+});
+const closeLb = () => { lb.classList.remove('open'); lbContent.innerHTML = ''; shotIndex = -1; };
 lb.addEventListener('click', e => { if (e.target === lb || e.target.tagName === 'BUTTON') closeLb(); });
 addEventListener('keydown', e => e.key === 'Escape' && closeLb());
 
